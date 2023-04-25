@@ -72,30 +72,6 @@ const [numHardCorrect, setNumHardCorrect] = useState(0);
 }, [topic]);
 
 
-
-
-  /*const handleAnswerOptionClick = (isCorrect, difficulty) => {
-    let questionScore = 0;
-    if (isCorrect) {
-      if (difficulty === 'easy') {
-        questionScore = 1;
-      } else if (difficulty === 'medium') {
-        questionScore = 2;
-      } else if (difficulty === 'hard') {
-        questionScore = 3;
-      }
-      setScore(score + questionScore);
-    }
-
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
-    }
-    setAnsweredQuestions(answeredQuestions + 1);
-    if (answeredQuestions >= 9) {
-      setShowScore(true);
-    }
-  };*/
   const handleAnswerOptionClick = (isCorrect, difficulty) => {
   let questionScore = 0;
   if (isCorrect) {
@@ -103,10 +79,10 @@ const [numHardCorrect, setNumHardCorrect] = useState(0);
       questionScore = 1;
       setNumEasyCorrect(numEasyCorrect + 1);
     } else if (difficulty === 'medium') {
-      questionScore = 2;
+      questionScore = 3;
       setNumMediumCorrect(numMediumCorrect + 1);
     } else if (difficulty === 'hard') {
-      questionScore = 3;
+      questionScore = 4;
       setNumHardCorrect(numHardCorrect + 1);
     }
     setScore(score + questionScore);

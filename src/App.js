@@ -13,6 +13,7 @@ import Practice from './components/Practice';
 import EditPractice from './components/EditPractice';
 import Navbar from './components/Navbar';
 import Teacher from './components/Teacher';
+
 import AddQuestionForm from './components/AddQuestionForm';
 import EditQuestionForm from './components/EditQuestionForm';
 import AddPQuestionForm from './components/AddPQuestionForm';
@@ -21,7 +22,7 @@ import './App.css';
 
 function App() {
   const location = useLocation();
-  const hideNavbarRoutes = ['/quiz', '/practice',  '/scoreboard', '/editquiz', '/editpractice','/AddQuestionForm','/EditQuestionForm','/AddPQuestionForm','/EditPQuestionForm'];
+  const hideNavbarRoutes = ['/quiz', '/practice',  '/scoreboard', '/editquiz', '/editpractice','/AddQuestionForm','/EditQuestionForm','/AddPQuestionForm','/EditPQuestionForm' ,'/dashboard'];
   
   return (
     <div className="App">

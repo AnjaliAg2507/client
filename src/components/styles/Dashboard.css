@@ -1,6 +1,6 @@
-.dashboard {
+za.dashboard {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   align-items: center;
   padding: 20px;
 }
@@ -35,12 +35,7 @@ h1 {
   width: 100%;
 }
 
-.score-distribution-chart {
-  width: 500px;
-  height: 500px;
-  margin: 20px;
-  background-color: white;
-}
+
 
 h3 {
   font-size: 24px;
@@ -62,6 +57,10 @@ h3 {
 
 
 .score-distribution-chart {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  background-color: white;
   margin-right: 20px;
   margin-bottom: 20px;
   padding: 20px;
@@ -93,4 +92,117 @@ h3 {
   color: #666;
 }
 
+.pass-fail-rate{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: lightyellow;
+}
+.pass-fail-rate h2 {
+ font-size: 24px;
+  font-weight: bold;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.pass-fail-rate-chart {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  background-color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pass-fail-rate-chart h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pass-fail-rate-chart p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+}
+
+.topicwise-top-performers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: lightyellow;
+}
+
+.topicwise-top-performers h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.topicwise-top-performers-chart {
+  width: 500px;
+  height: 800px;
+  margin: 20px;
+  background-color: white;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.topicwise-top-performers-chart h3 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.topicwise-top-performers-chart h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.performers-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.performers-list li {
+  margin: 0.5em 0;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loading p {
+  font-size: 24px;
+}
 

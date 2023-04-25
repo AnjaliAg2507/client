@@ -136,8 +136,11 @@ const handleLogout = () => {
               <td>{student.easy}</td>
               <td>{student.medium}</td>
               <td>{student.hard}</td>
+              <td className={student.verdict === 'Pass' ? 'pass' : 'fail'}>
+        {student.verdict}
+      </td>
              
-              <td>{student.point >= 8 ? (<td className="result-pass">Pass</td>) : (<td className="result-fail">Fail</td>)}</td>
+              
             </tr>
           ))}
         </tbody>

@@ -45,19 +45,21 @@ td {
   
 }
 
-.result-pass {
+.pass {
   color: lightgreen;
   font-weight: bold;
   border: none;
   text-transform: uppercase;
 }
-
-.result-fail {
+.fail {
   color: #ff6961;
   font-weight: bold;
    border: none;
    text-transform: uppercase;
 }
+
+
+
 
 .scoreboard-buttons {
   margin-top: 1rem;
