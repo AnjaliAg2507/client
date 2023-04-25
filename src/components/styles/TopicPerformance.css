@@ -1,0 +1,43 @@
+.topic-performance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.loading p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.victory-legend-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.victory-legend-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.victory-legend-symbol {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+.victory-bar {
+  transition: all 0.3s ease-in-out;
+}
+
+.victory-bar:hover {
+  opacity: 0.7;
+}

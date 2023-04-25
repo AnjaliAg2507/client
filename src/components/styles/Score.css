@@ -1,0 +1,69 @@
+.score-section {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin:0 auto;
+  margin-top: 20px;
+  padding:10%;
+  border-radius: 20px;
+  background-color: #C1E1C1;
+  height: 45rem; 
+  width: 30rem;
+
+  
+}
+#my-gif {
+  position: absolute;
+  top: 31%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 10rem;
+  height: 10rem;
+}
+.score-section h2 {
+  margin-top: 5rem;
+font-size: 2.25rem;
+font-weight: bold;
+margin-bottom: 0.625rem;
+}
+
+.score-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.score-section button {
+  background-color: lightcoral;
+  color: white;
+  font-size: 1.125rem; /* 18px ÷ 16px */
+  font-weight: bold;
+  padding: 0.625rem 1.25rem; /* 10px ÷ 16px, 20px ÷ 16px */
+  border: none;
+  border-radius: 0.3125rem; /* 5px ÷ 16px */
+  cursor: pointer;
+}
+
+.score-section button:hover {
+  background-color: lightsalmon;
+}
+
+
+
+
+
+
+
+
+
+
+
+

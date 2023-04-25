@@ -1,0 +1,146 @@
+
+.scoreboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+h1 {
+   font-family: 'Fascinate Inline';
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  position: relative;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 1rem;
+}
+
+th {
+   padding: 1rem;
+  text-align: center;
+  border: 2px solid white;
+  background-color: #B0E0E6;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+  font-size: 1.2rem;
+
+}
+td {
+  padding: 1rem;
+  text-align: center;
+  border: 2px solid white;
+  background-color: lightyellow;
+  font-family: 'Fascinate Inline';
+  font-size: 1.2rem;
+  font-weight: bold;
+  
+  
+}
+
+.result-pass {
+  color: lightgreen;
+  font-weight: bold;
+  border: none;
+  text-transform: uppercase;
+}
+
+.result-fail {
+  color: #ff6961;
+  font-weight: bold;
+   border: none;
+   text-transform: uppercase;
+}
+
+.scoreboard-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+}
+
+.scoreboard-buttons button {
+   font-family: 'Fascinate Inline';
+  background-color: lightcoral;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 40%;
+
+}
+
+.scoreboard-buttons button:hover {
+  background-color: salmon;
+}
+
+.scoreboard-buttons a {
+  text-decoration: none;
+}
+
+.scoreboard-buttons a button {
+  width: 100%;
+}
+
+.scoreboard-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.scoreboard-empty h1 {
+  font-family: 'Fascinate Inline';
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  position: relative;
+}
+
+.scoreboard-empty p {
+  font-family: 'Fascinate Inline';
+  font-size: 4.5rem;
+  text-align: center;
+  margin-top: 2rem;
+  text-transform: capitalize;
+  color: black;
+}
+
+.scoreboard-empty .scoreboard-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+  max-width: 800px;
+
+}
+
+.scoreboard-empty button {
+  font-family: 'Fascinate Inline';
+  background-color: lightcoral;
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 40%;
+   margin-right: 10rem;
+   
+}
+
+.scoreboard-empty button:hover {
+  background-color: salmon;
+}
+
+ 

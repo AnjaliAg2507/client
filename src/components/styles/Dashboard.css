@@ -1,0 +1,96 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+}
+
+.score-distribution {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: lightyellow;
+}
+
+.score-distribution h2 {
+  font-size: 24px;
+  font-weight: bold;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.score-distribution-chart {
+  width: 500px;
+  height: 500px;
+  margin: 20px;
+  background-color: white;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.victory-axis {
+  font-size: 16px;
+  font-weight: bold;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+}
+
+
+
+.score-distribution-chart {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.score-distribution-chart h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.score-distribution-chart p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+  color: #666;
+}
+
+

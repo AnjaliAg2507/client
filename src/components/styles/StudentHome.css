@@ -1,0 +1,54 @@
+.StudentHome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width:100%;
+
+}
+.StudentHome h1 {
+  font-family: 'Fascinate Inline';
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #000;
+}
+
+.StudentHome p {
+  font-family: 'Fascinate Inline';
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #000;
+}
+
+ .button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ button {
+
+  padding: 1rem 2rem;
+  margin-bottom: 1.25rem; 
+  margin-left: 1.25rem; 
+  margin-right: 1.25rem; 
+  margin-top: 1.25rem; 
+  font-size: 2rem;
+  background-color: lightcoral;
+  color: white;
+  border: none;
+  border-radius: 12.5rem; 
+  cursor: pointer;
+  font-family: 'Fascinate Inline';
+}
+
+
+ button:hover {
+  transform: scale(1.2);
+  background-color: salmon;
+  border: none;
+  outline: none;
+}

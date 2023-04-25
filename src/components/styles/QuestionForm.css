@@ -1,0 +1,82 @@
+.add-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+  padding :3rem;
+  margin-bottom: 4rem;
+
+}
+
+.form-control {
+  margin-bottom: 2rem;
+  background-color: lightyellow;
+
+
+}
+.add-form h1{
+font-family: 'Fascinate Inline';
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: lightcoral;
+  position: relative;
+}
+.form-control label {
+  font-family: 'Fascinate Inline';
+  display: block;
+  margin-bottom: 2rem;
+  font-weight: bold;
+
+}
+
+.form-control input[type="text"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-bottom: 2rem;
+}
+
+
+.form-control input[type="radio"] {
+   margin-right: 2rem;
+   margin-left: 0.5rem;
+  
+
+}
+
+.add-form .nav-button {
+  display: flex;
+  flex-direction:row;
+  
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-top: 2rem;
+ 
+  }
+
+.add-form .nav-button button {
+  font-family: 'Fascinate Inline';
+  background-color: lightcoral;
+  
+  color: #fff;
+  border: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  width: 200px; /* fixed width value */
+  margin: 0 1rem; /* add margin to separate buttons */
+}
+
+.add-form .nav-button button:hover {
+  background-color: salmon;
+}
+
+
+
+

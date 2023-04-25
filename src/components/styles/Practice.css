@@ -1,0 +1,193 @@
+.practice-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10% 0%;
+  height: 100vh;
+  
+}
+
+ .topic-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0;
+  width: 100%;
+}
+
+.topic-selector label {
+  margin-right: 1rem;
+  font-size: 2rem;
+  font-family: 'Fascinate Inline';
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  color: black;
+  position: relative;
+}
+
+.topic-selector select {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  border: 2px solid #ccc;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.topic-selector select:hover,
+.topic-selector select:focus {
+  background-color: lightcoral;
+  color: #fff;
+}
+
+
+
+
+
+.practice-question-section {
+  background: lightcoral;
+  padding: 0.3125rem;
+  border-radius: 2.5rem;
+  text-align: center;
+  font-family: 'Fascinate Inline';
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  width: 98%;
+  height: auto;
+  opacity: 0.8;
+}
+
+.practice-question-count {
+  color: #000;
+ }
+
+.practice-question-text {
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+
+
+
+.practice-answer-status img {
+  width: 20%;
+  height: 10%;
+  margin:none;
+  
+}
+
+.practice-answer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0.3125rem;
+  max-width: 67.5rem;
+  width: 100%;
+}
+
+.practice-answer-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.625rem;
+}
+
+.practice-btn {
+  background-image: url('b2.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border:none;
+  outline:none;
+  width: 28.125rem;
+  height: 6.25rem;
+  color: #000;
+  cursor: pointer;
+  border-radius: 0.625rem;
+  padding: 0% 0%;
+  font-size: 2.5rem;
+  font-weight: bold;
+  font-family: 'Fascinate Inline';
+  text-align: center;
+}
+
+.practice-btn:hover {
+  transform: scale(1.2);
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.practice-btn:disabled {
+  cursor: not-allowed;
+}
+
+
+
+.practice-navigation-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.practice-navigation-section button,
+.practice-navigation-section a {
+  padding: 0%;
+width: 9rem;
+height: 3rem;
+font-size: 2rem;
+font-family: 'Fascinate Inline';
+border-radius: 0.5rem;
+cursor: pointer;
+border: none;
+outline: none;
+text-align: center;
+}
+
+.practice-navigation-section button[disabled],
+.practice-navigation-section a[disabled] {
+opacity: 0.5;
+cursor: not-allowed;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: bold;
+  height: 100vh;
+}
+
+
+.loading::after {
+  content: "";
+  animation: dots 1s infinite;
+}
+
+@keyframes dots {
+  0% {
+    content: ".";
+  }
+  33% {
+    content: "..";
+  }
+  66% {
+    content: "...";
+  }
+}
+

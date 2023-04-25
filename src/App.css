@@ -1,0 +1,123 @@
+.start-screen-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/home.jpg');
+  background-size: 103% 103%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.quiz-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/b1.gif');
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: animatedBackground 5s linear infinite;
+  animation-fill-mode: forwards;
+}
+.practice-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/b.gif');
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.score-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/b4.JPG');
+  background-color: mintcream;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+
+
+
+.login-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./images/b6.JPG');
+  background-color: green;
+  background-size: 103% 103%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.teacher-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  background-image: url('./images/b8.jpg');
+  background-size: 103% 103%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.edit-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color:white;
+  
+  background-size: 103% 103%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-position: center;
+  overflow-y: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
