@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import './styles/Practice.css';
 import axios from 'axios';
 
-import correctImage from '../images/correct.png';
-import incorrectImage from '../images/incorrect.png';
+import correctImage from '../image/correct.PNG';
+import incorrectImage from '../image/incorrect.PNG';
 
 const Practice = () => {
   const [questions, setQuestions] = useState([]);

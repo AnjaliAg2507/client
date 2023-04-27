@@ -88,7 +88,12 @@ const ScoreDistribution = () => {
           <VictoryAxis
             label="Score"
             tickValues={[0, 5, 10, 15, 20, 25]}
-            tickFormat={(x) => (`${x}-${x+5}`)}
+            tickFormat={(x) => {
+  if (x === 25) {
+    return '25';
+  }
+  return `${x}-${x+5}`;
+}}
             domain={[0, 25]}
             tickCount={6}
             labelPlacement="end"

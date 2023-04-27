@@ -5,7 +5,8 @@ import './styles/Teacher.css';
 function Teacher() {
   return (
     <div className="teacher">
-            <img src={require('../images/logo.png')} alt="Logo" id="logo" height={200} width={200} ></img>
+           <img src={require('../image/logo.PNG')} alt="Logo" id="logo" height={200} width={200} ></img>
+
       
       <h1>Government of Karnataka</h1>
       <p>A fun way to learn maths!</p>

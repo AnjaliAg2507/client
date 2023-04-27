@@ -8,6 +8,7 @@ import PassFailRate from './PassFailRate';
 import TopicwiseTopPerformers from './TopicwiseTopPerformers';
 import './styles/Dashboard.css';
 
+
 const generatePdf = () => {
   const input = document.querySelector('#pdf-content');
 
@@ -19,18 +20,35 @@ const generatePdf = () => {
     const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
 
     pdf.addImage(imgData, 'PNG', 10, 10, pdfWidth, pdfHeight);
+
+    let contentHeight = pdfHeight + 10; // declare contentHeight using let keyword
+    const pageHeight = pdf.internal.pageSize.getHeight();
+
+    while (contentHeight > pageHeight) {
+      pdf.addPage();
+      const position = 10 - pageHeight;
+      pdf.addImage(imgData, 'PNG', 10, position, pdfWidth, pdfHeight);
+      contentHeight -= pageHeight; // update contentHeight variable's value
+    }
+
     pdf.save('dashboard.pdf');
   });
 };
 
+
+
+
 const Dashboard = () => {
   return (
     <div className="dashboard">
-      <h1>Analysis Report</h1>
+      
+
       <div id="pdf-content">
+      <h1>Analysis Report</h1>
+      <TopicwiseTopPerformers />
         <ScoreDistribution />
         <PassFailRate />
-        <TopicwiseTopPerformers />
+       
       </div>
       <div className="button-container">
         <Link to="/scoreboard"><button>Back</button></Link>
@@ -42,8 +60,6 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-
 
 
 

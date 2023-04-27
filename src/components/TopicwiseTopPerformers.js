@@ -39,10 +39,7 @@ const TopicwiseTopPerformers = () => {
     const topPerformers = topicStudents.filter(student => student.point >= 20);
     const averagePerformers = topicStudents.filter(student => student.point >= 10 && student.point < 20);
     const poorPerformers = topicStudents.filter(student => student.point < 10);
-    console.log(`For topic "${topic}", there are ${topPerformers.length} top performers, ${averagePerformers.length} average performers, and ${poorPerformers.length} poor performers`);
-    console.log(`Top performers: ${JSON.stringify(topPerformers)}`);
-    console.log(`Average performers: ${JSON.stringify(averagePerformers)}`);
-    console.log(`Poor performers: ${JSON.stringify(poorPerformers)}`);
+    
     return {
       topPerformers,
       averagePerformers,
@@ -63,25 +60,24 @@ const TopicwiseTopPerformers = () => {
       <h2>Topicwise Top Performers</h2>
       {topics.map(topic => {
         const data = calculateTopPerformers(topic);
-        console.log(`data for topic "${topic}":`, data);
         return (
           <div key={topic} className="topicwise-top-performers-chart">
             <h3>{topic}</h3>
-            <h4>Top Performers:</h4>
+            <p>Top Performers:</p>
             <ul className="performers-list">
               {data.topPerformers.map(student => <li key={student.id}>{student.studentName}</li>)}
             </ul>
-            <h4>Average Performers:</h4>
+            <p>Average Performers:</p>
             <ul className="performers-list">
               {data.averagePerformers.map(student => <li key={student.id}>{student.studentName}</li>)}
             </ul>
-            <h4>Poor Performers:</h4>
+            <p>Poor Performers:</p>
             <ul className="performers-list">
               {data.poorPerformers.map(student => <li key={student.id}>{student.studentName}</li>)}
             </ul>
             <VictoryChart
               theme={VictoryTheme.material}
-              height={200}
+              height={300}
               domainPadding={20}
             >
               <VictoryAxis 
@@ -114,11 +110,11 @@ const TopicwiseTopPerformers = () => {
                     fill: ({ datum }) => {
                       switch (datum.x) {
                         case 'Top Performers':
-                          return '#1f77b4';
+                          return '#cdb4db';
                         case 'Average Performers':
-                          return '#ff7f0e';
+                          return '#bde0fe';
                         case 'Poor Performers':
-                          return '#d62728';
+                          return '#ffc8dd';
                         default:
                           return '#000000';
                       }

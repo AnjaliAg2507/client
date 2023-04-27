@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./images/home.jpg');
+  background-image: url('./image/home.JPG');
   background-size: 103% 103%;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +14,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./images/b1.gif');
+  background-image: url('./image/b1.GIF');
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./images/b.gif');
+  background-image: url('./image/b.GIF');
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./images/b4.JPG');
+ 
   background-color: mintcream;
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,7 +62,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('./images/b6.JPG');
+  background-image: url('./image/b6.JPG');
   background-color: green;
   background-size: 103% 103%;
   background-repeat: no-repeat;
@@ -74,7 +74,7 @@
   align-items: center;
   justify-content: center;
   background-color:white;
-  background-image: url('./images/b8.jpg');
+  background-image: url('./image/b8.JPG');
   background-size: 103% 103%;
   background-repeat: no-repeat;
   background-position: center;
@@ -85,7 +85,6 @@
   align-items: center;
   justify-content: center;
   background-color:white;
-  
   background-size: 103% 103%;
   background-repeat: no-repeat;
   background-position: center;

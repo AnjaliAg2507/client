@@ -30,7 +30,7 @@ const Score = ({ score, totalQuestions ,numEasyCorrect,numMediumCorrect,numHardC
 
    return (
     <div className="score-section">
-      <img src={require('../images/a3.gif')} alt="Your GIF" id="my-gif"></img>
+      <img src={require('../image/a3.GIF')} alt="Your GIF" id="my-gif"></img>
       <h2>Quiz Completed!</h2>
       <p>Your score is {score}.</p>
       <p>Result : <span style={verdictStyle}>{score < 10 ? "Fail" : "Pass"}</span></p>
