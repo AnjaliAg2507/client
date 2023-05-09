@@ -106,9 +106,9 @@
 
 .practice-btn {
   background-image: url('b2.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;
+  background-position: cover;
+  background-color: lightpink;
+   
   border:none;
   outline:none;
   width: 28.125rem;
@@ -117,14 +117,14 @@
   cursor: pointer;
   border-radius: 0.625rem;
   padding: 0% 0%;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: bold;
   font-family: 'Fascinate Inline';
   text-align: center;
 }
 
 .practice-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   background-color: transparent;
   border: none;
   outline: none;

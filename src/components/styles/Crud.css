@@ -46,12 +46,15 @@
   font-weight: bold;
   font-family: 'Fascinate Inline';
   font-size: 1.2rem;
+  width:10%;
 }
 
 .edit-container th:first-child,
 .edit-container td:first-child {
   width: 25%;
 }
+
+
 
 .edit-container th:last-child,
 .edit-container td:last-child {
@@ -79,6 +82,7 @@
 .crud-container button:hover {
   background-color: salmon;
 }
+
 
 
 

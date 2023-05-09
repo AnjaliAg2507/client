@@ -7,7 +7,7 @@ import { useHistory } from "react-router-dom";
 const Scoreboard = () => {
   const [students, setStudents] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [selectedTopic, setSelectedTopic] = useState('');
+  const [selectedTopic, setSelectedTopic] = useState('Fractions');
   const [topics, setTopics] = useState([]);
    const history = useHistory();
 

@@ -9,7 +9,7 @@ import { useHistory } from "react-router-dom";
 const EditPractice = () => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedTopic, setSelectedTopic] = useState('');
+  const [selectedTopic, setSelectedTopic] = useState('Fractions');
   const [topics, setTopics] = useState([]);
   const history = useHistory();
 
@@ -85,7 +85,7 @@ return (
       <div className="topic-selector">
         <label htmlFor="topic">Select a topic:</label>
         <select id="topic" value={selectedTopic} onChange={handleTopicChange}>
-          <option value="">All Topics</option>
+          
           {topics.map((topic) => (
             <option key={topic} value={topic}>{topic}</option>
           ))}

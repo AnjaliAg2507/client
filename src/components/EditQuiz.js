@@ -9,7 +9,7 @@ import { useHistory } from "react-router-dom";
 const EditQuiz = () => {
   const [questions, setQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedTopic, setSelectedTopic] = useState('');
+  const [selectedTopic, setSelectedTopic] = useState('Fractions');
   const [topics, setTopics] = useState([]);
   const history = useHistory();
 
@@ -52,7 +52,7 @@ const EditQuiz = () => {
   });
 };
 
-  /*const handleTopicChange = (event) => {
+  const handleTopicChange = (event) => {
   const topic = event.target.value;
   if (!topics.includes(topic)) {
     setSelectedTopic('');
@@ -60,10 +60,8 @@ const EditQuiz = () => {
     setSelectedTopic(topic);
     fetchQuestions(topic);
   }
-};*/
-const handleTopicChange = (topic) => {
-    setSelectedTopic(topic);
-  };
+};
+
   
   const handleDeleteQuestion = async (questionId) => {
     try {
@@ -90,11 +88,14 @@ const filteredQuestions = questions.filter((question) => selectedTopic === '' ||
   
     <div className="topic-selector">
         
-        {topics.map((topic) => (
-          <button key={topic} onClick={() => handleTopicChange(topic)}>{topic}</button>
-        ))}
-        
-      </div>
+        <label htmlFor="topic">Select a topic:</label>
+        <select id="topic" value={selectedTopic} onChange={handleTopicChange}>
+         
+          {topics.map((topic) => (
+            <option key={topic} value={topic}>{topic}</option>
+          ))}
+        </select>
+    </div>
     
     <table>
       <thead>
@@ -105,7 +106,6 @@ const filteredQuestions = questions.filter((question) => selectedTopic === '' ||
           <th>Option C</th>
           <th>Option D</th>
           <th>Answer</th>
-          
           <th>Difficulty</th>
           <th>Topic</th>
           <th>Actions</th>
@@ -136,14 +136,10 @@ const filteredQuestions = questions.filter((question) => selectedTopic === '' ||
    <div className="nav-button">
     <Link to="/Teacher"><button>Home</button></Link>
     <Link to="/AddQuestionForm"><button>Add Question</button></Link>
-    
     <Link to="/"><button>Logout</button></Link>
-  
-</div>
-
   </div>
+</div>
 );
-
 
 };
 
